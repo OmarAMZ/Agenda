@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Agenda</string>
+    <string name="txtBuscar">Buscar</string>
+    <string name="btnGuardar">Guardar</string>
+    <string name="itmAgregar">Agregar</string>
+    <string name="itmAcercaDe">Acerca de</string>
+    <string name="lblTitulo">Titulo</string>
+    <string name="lblDescripcion">Descripcion</string>
+    <string name="rdTarea">Tarea</string>
+    <string name="rdNota">Nota</string>
+    <string name="terminacion">Terminacion</string>
+    <string name="agregarRecordatorio">Agregar Recordatorio</string>
+    <string name="verRecordatorios">Ver Recordatorio</string>
+    <string name="lblArchivos">Archivos</string>
+    <string name="btnArchivos">Adjuntar Archivos</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="audio">Grabar audio</string>
+    <string name="video">Grabar video</string>
+    <string name="foto">Tomar foto</string>
+    <string name="archivo">Seleccionar un archivo</string>
+    <string name="ver">Ver</string>
+    <string name="modificar">Actualizar</string>
+    <string name="marcar">Marcar como terminado</string>
+    <string name="btnReproducir">Reproducir</string>
+    <string name="btnPausar">Pausa</string>
+</resources>

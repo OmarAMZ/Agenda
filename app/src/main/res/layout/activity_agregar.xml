@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Agregar">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:scrollbars="vertical">
+
+            <Button
+                android:id="@+id/btnGuardar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF9C4"
+                android:onClick="btnGuardarOnClick"
+                android:text="@string/btnGuardar" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lblTitulo"
+                android:textAlignment="center"
+                android:gravity="center_horizontal" />
+
+            <EditText
+                android:id="@+id/txtTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lblDescripcion"
+                android:textAlignment="center"
+                android:gravity="center_horizontal" />
+
+            <EditText
+                android:id="@+id/txtDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:inputType="textMultiLine"
+                android:textAlignment="center"
+                android:gravity="center_horizontal" />
+
+            <RadioGroup
+                android:id="@+id/rdgTipo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rdTarea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rdTarea" />
+
+                <RadioButton
+                    android:id="@+id/rdNota"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rdNota" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/lnrRecordatoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnAgregarAlarma"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFF9C4"
+                    android:onClick="btnAgregarAlarmaOnClick"
+                    android:text="@string/terminacion" />
+
+                <TextView
+                    android:id="@+id/lblRecordatorio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFF9C4"
+                    android:onClick="AgregarRecordatorio"
+                    android:text="@string/agregarRecordatorio" />
+
+                <Button
+                    android:id="@+id/btnVerRecordatorios"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFF9C4"
+                    android:onClick="MostarRecordatorios"
+                    android:text="@string/verRecordatorios" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFF9C4"
+                    android:text="@string/lblArchivos"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnArchivos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF9C4"
+                android:onClick="btnArchivosOnClick"
+                android:text="@string/btnArchivos" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/Imagen"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcclcArchivoLista"
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CapturaFoto">
+
+    <Button
+        android:id="@+id/btnCapturaFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:background="#FFF9C4"
+        android:onClick="btnCapturaFoto_click"
+        android:text="Tomar Foto" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnCapturaFoto"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/btnCapturaFoto"
+        android:layout_below="@+id/btnCapturaFoto"
+        android:src="@drawable/ic_launcher_background" />
+
+</RelativeLayout>
